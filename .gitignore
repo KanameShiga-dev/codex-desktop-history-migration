@@ -1,0 +1,17 @@
+# Migration packages contain private conversations and attachments.
+Codex-History-Transfer*/
+payload/
+manifest.json
+
+# Local Codex data and databases must never be committed.
+.codex/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+auth.json
+
+# Generated files
+__pycache__/
+*.pyc
+migration-backup-*/
+db-debug.json
